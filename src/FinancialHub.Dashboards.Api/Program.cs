@@ -1,4 +1,5 @@
 using FinancialHub.Dashboards.Infra.Data.Extensions;
+using FinancialHub.Dashboards.Api.Health.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,6 +15,6 @@ var app = builder.Build();
 app.UseAuthorization();
 
 app.MapControllers();
-app.MapHealthChecks("/health");
+app.AddHealthCheckEndpoint("health");
 
 app.Run();

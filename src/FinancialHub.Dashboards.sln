@@ -23,6 +23,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinancialHub.Dashboards.Application", "FinancialHub.Dashboards.Application\FinancialHub.Dashboards.Application.csproj", "{6FD6E429-2239-4C0F-AD3F-A02FA7EA7009}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancialHub.Dashboards.Api.Health", "FinancialHub.Dashboards.Api.Health\FinancialHub.Dashboards.Api.Health.csproj", "{A3C954AE-67CB-4EB1-99AD-C0D861381BBB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -49,6 +51,10 @@ Global
 		{6FD6E429-2239-4C0F-AD3F-A02FA7EA7009}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6FD6E429-2239-4C0F-AD3F-A02FA7EA7009}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6FD6E429-2239-4C0F-AD3F-A02FA7EA7009}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3C954AE-67CB-4EB1-99AD-C0D861381BBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3C954AE-67CB-4EB1-99AD-C0D861381BBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3C954AE-67CB-4EB1-99AD-C0D861381BBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3C954AE-67CB-4EB1-99AD-C0D861381BBB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -59,6 +65,7 @@ Global
 		{C6B95723-F16D-4E8F-86F1-F977E6B9A142} = {5FE9FB77-A1C5-4292-8CB7-CE15DBF55AAD}
 		{D0064E5D-F64D-47F0-848C-99629A57BDC9} = {48CA1308-E3A1-444C-9199-053BDBE91577}
 		{6FD6E429-2239-4C0F-AD3F-A02FA7EA7009} = {46F78526-FF2A-4F10-8D46-D4E6767A0CDD}
+		{A3C954AE-67CB-4EB1-99AD-C0D861381BBB} = {AFF82241-2345-40BC-9914-68B90277C5BA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {35C9D5B5-C9A4-4BEE-8070-9704C35363E9}
