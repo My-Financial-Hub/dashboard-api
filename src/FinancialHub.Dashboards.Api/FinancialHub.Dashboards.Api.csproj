@@ -13,7 +13,17 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\FinancialHub.Dashboards.Infra.Data\FinancialHub.Dashboards.Infra.Data.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Controllers\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="appsettings.json">
+      <CustomToolNamespace>Dashboard.Api</CustomToolNamespace>
+    </Content>
   </ItemGroup>
 
 </Project>

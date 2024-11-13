@@ -5,13 +5,13 @@ VisualStudioVersion = 17.11.35312.102
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{AFF82241-2345-40BC-9914-68B90277C5BA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinancialHub.Dashboards.Api", "src\FinancialHub.Dashboards.Api\FinancialHub.Dashboards.Api.csproj", "{D0E4A847-876B-4F1A-97E1-21D8269C0C4E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinancialHub.Dashboards.Api", "FinancialHub.Dashboards.Api\FinancialHub.Dashboards.Api.csproj", "{D0E4A847-876B-4F1A-97E1-21D8269C0C4E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinancialHub.Dashboards.Domain", "src\FinancialHub.Dashboards.Domain\FinancialHub.Dashboards.Domain.csproj", "{82B754B3-C569-4DCC-AB01-242BBA85C2DA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinancialHub.Dashboards.Domain", "FinancialHub.Dashboards.Domain\FinancialHub.Dashboards.Domain.csproj", "{82B754B3-C569-4DCC-AB01-242BBA85C2DA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinancialHub.Dashboards.Infra.Data", "src\FinancialHub.Dashboards.Infra.Data\FinancialHub.Dashboards.Infra.Data.csproj", "{C6B95723-F16D-4E8F-86F1-F977E6B9A142}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinancialHub.Dashboards.Infra.Data", "FinancialHub.Dashboards.Infra.Data\FinancialHub.Dashboards.Infra.Data.csproj", "{C6B95723-F16D-4E8F-86F1-F977E6B9A142}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinancialHub.Dashboards.CrossCutting", "src\FinancialHub.Dashboards.CrossCutting\FinancialHub.Dashboards.CrossCutting.csproj", "{D0064E5D-F64D-47F0-848C-99629A57BDC9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinancialHub.Dashboards.CrossCutting", "FinancialHub.Dashboards.CrossCutting\FinancialHub.Dashboards.CrossCutting.csproj", "{D0064E5D-F64D-47F0-848C-99629A57BDC9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{75D5696E-6562-4F72-B4DA-74FAD4236407}"
 EndProject
@@ -21,7 +21,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CrossCutting", "CrossCuttin
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{46F78526-FF2A-4F10-8D46-D4E6767A0CDD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancialHub.Dashboards.Application", "src\FinancialHub.Dashboards.Application\FinancialHub.Dashboards.Application.csproj", "{6FD6E429-2239-4C0F-AD3F-A02FA7EA7009}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinancialHub.Dashboards.Application", "FinancialHub.Dashboards.Application\FinancialHub.Dashboards.Application.csproj", "{6FD6E429-2239-4C0F-AD3F-A02FA7EA7009}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
