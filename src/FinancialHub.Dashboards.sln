@@ -21,7 +21,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CrossCutting", "CrossCuttin
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{46F78526-FF2A-4F10-8D46-D4E6767A0CDD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinancialHub.Dashboards.Application", "FinancialHub.Dashboards.Application\FinancialHub.Dashboards.Application.csproj", "{6FD6E429-2239-4C0F-AD3F-A02FA7EA7009}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FinancialHub.Dashboards.Application", "FinancialHub.Dashboards.Application\FinancialHub.Dashboards.Application.csproj", "{6FD6E429-2239-4C0F-AD3F-A02FA7EA7009}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
