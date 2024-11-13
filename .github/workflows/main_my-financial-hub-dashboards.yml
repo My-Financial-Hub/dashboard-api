@@ -1,18 +1,25 @@
-# Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
-# More GitHub Actions for Azure: https://github.com/Azure/actions
-
-name: Build and deploy ASP.Net Core app to Azure Web App - my-financial-hub-dashboards
+name: Build and deploy
 
 on:
   push:
     branches:
       - main
+    paths:
+      - 'src/*' 
+      - 'src/**' 
   workflow_dispatch:
+  
+env:
+  project-dir: ./src
 
 jobs:
   build:
     runs-on: windows-latest
-
+    
+    defaults:
+      run:
+        working-directory: ${{ env.project-dir }}
+        
     steps:
       - uses: actions/checkout@v4
 
@@ -25,28 +32,34 @@ jobs:
         run: dotnet build --configuration Release
 
       - name: dotnet publish
-        run: dotnet publish -c Release -o "${{env.DOTNET_ROOT}}/myapp"
+        run: dotnet publish -c Release -o "${{env.DOTNET_ROOT}}/artifact"
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
-          name: .net-app
-          path: ${{env.DOTNET_ROOT}}/myapp
+          name: my-financial-hub-dashboards
+          path: ${{env.DOTNET_ROOT}}/artifact
 
   deploy:
     runs-on: windows-latest
     needs: build
+    
     environment:
       name: 'Production'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
+      
     permissions:
-      id-token: write #This is required for requesting the JWT
-
+      id-token: write
+      
+    defaults:
+      run:
+        working-directory: ${{ env.project-dir }}
+        
     steps:
       - name: Download artifact from build job
         uses: actions/download-artifact@v4
         with:
-          name: .net-app
+          name: my-financial-hub-dashboards
       
       - name: Login to Azure
         uses: azure/login@v2
